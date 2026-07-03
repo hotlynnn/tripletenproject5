@@ -1,19 +1,26 @@
-# TripleTen Project 5: Car Advertisement Dashboard
-
-This project is a web application built with Streamlit and Plotly Express to explore a dataset of car advertisements.
+# Car Sales Advertisement Analysis
+This project is a web application that provides an exploratory data analysis (EDA) of car sales advertisements. It uses Streamlit for the web interface and Plotly Express for interactive visualizations.
 
 ## Features
-- **Odometer Histogram**: Visualize the distribution of mileage.
-- **Price vs Odometer Scatter Plot**: Analyze the relationship between price and mileage.
-- **Manufacturer Comparison**: Compare the price distributions of two different manufacturers side-by-side with optional normalization.
-- **Condition vs Model Year**: See how the condition of vehicles varies by their manufacturing year.
+- **Histogram**: Interactive histogram of vehicle odometer readings.
+- **Scatter plot**: Interactive scatter plot showing the relationship between odometer readings and price.
+- **Manufacturer Comparison**: Compare price distributions between two selected manufacturers with an optional normalization feature.
+- **Condition vs Model Year**: A histogram visualizing the distribution of vehicle conditions across different model years.
+- **Streamlit app**: Web-based dashboard accessible through a browser.
 
-## Local Development
-1. Clone the repository.
-2. Create a virtual environment: `python -m venv venv`
-3. Activate it: `venv\Scripts\activate` (Windows) or `source venv/bin/activate` (Mac/Linux)
-4. Install requirements: `pip install -r requirements.txt`
-5. Run the app: `streamlit run app.py`
+## Project Structure
+- `app.py`: Main Streamlit application file.
+- `notebooks/EDA.ipynb`: Jupyter notebook used for initial data exploration.
+- `vehicles_us.csv`: Dataset containing car sales advertisements.
+- `requirements.txt`: List of Python libraries required for the project.
+- `.streamlit/config.toml`: Configuration file for Streamlit deployment.
+Develop a web application and deploy it to a cloud service
 
 ## Deployment
-Deployed on Render.
+The  streamlit app was deployed on Render using a free offer.
+- `URL`: https://tripletenproject5.onrender.com
+
+## Take aways
+ We did not spend too much time exploring the dataset, as the focus of this project is different. The goal is to create a web application, and while it's great to have lots of different type graphics in it, that's was not also necessary at this stage. Instead, we focused on the work required to implement such an application.
+
+

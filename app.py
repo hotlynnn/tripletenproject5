@@ -8,7 +8,7 @@ car_data = pd.read_csv('vehicles_us.csv')
 # Header
 st.header('Car Advertisement Data Dashboard')
 
-# --- Section 1: Basic Visualizations ---
+# Graph 1: Basic Visualizations ---
 st.subheader('General Exploration')
 
 # Histogram check box
@@ -25,7 +25,7 @@ if build_scatter:
     fig = px.scatter(car_data, x="odometer", y="price")
     st.plotly_chart(fig, use_container_width=True)
 
-# --- Section 2: Manufacturer Comparison ---
+# Graph 2: Manufacturer Comparison ---
 st.header('Compare price distribution between manufacturers')
 
 # Extract manufacturer from model
@@ -57,7 +57,7 @@ fig_comp = px.histogram(df_filtered,
 
 st.plotly_chart(fig_comp, use_container_width=True)
 
-# --- Section 3: Condition vs Year ---
+# Graph 3: Condition vs Year ---
 st.header('Histogram of condition vs model_year')
 
 # Filter out rows with missing year or condition for a cleaner plot
