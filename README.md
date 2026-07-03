@@ -16,3 +16,6 @@ This project is a web application that provides an exploratory data analysis (ED
 - `requirements.txt`: List of Python libraries required for the project.
 - `.streamlit/config.toml`: Configuration file for Streamlit deployment.
 Develop a web application and deploy it to a cloud service
+
+## Take aways
+ We did not spend too much time exploring the dataset, as the focus of this project is different. The goal is to create a web application, and while it's great to have lots of different type graphics in it, that's was not also necessary at this stage. Instead, we focused on the work required to implement such an application.
